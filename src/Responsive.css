@@ -1,0 +1,2111 @@
+body {
+    margin: 0 !important;
+  }
+  
+    @media screen and (max-width: 2000px) {
+      .input-display{
+        display: none;
+      }
+    }
+    @media (min-width: 2000px) {
+      .input-display{
+        display: none;
+      }
+    }
+  @media screen and (max-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+    .input-display  {
+      display: flex  ;
+    }
+  }
+    .mobile-nav {
+    display: block;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.5s linear;
+  }
+  .mobile-nav.active {
+    transform: translateX(0);
+  }
+    .main-landing-page {
+    background: url(/src/assets/landing-page-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 30px;
+  }
+  .landing-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .landing-page-content .heading h1 {
+    font: 600 56px 'proxima';
+    color: #fff;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .landing-page-content .heading h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+    .content-center {
+      min-width: 300px;
+      margin-top: 50px;
+    }
+    .content-center .top,
+    .content-center .center,
+    .content-center .bottom {
+      min-width: 250px;
+      padding: 10px;
+    }
+    .main-header {
+        margin-inline: 10px;
+      }
+      .table-container-pool{
+          overflow-x: scroll;
+      }
+      .explore-graph-section{
+          flex-direction: column;
+      }
+      .tokens, .pools, .transactions{
+        overflow-x: scroll;
+      }
+      .main-header .left {
+        gap: 15px;
+      }
+      .main-header .right,
+      .main-header .right-right {
+        gap: 10px;
+        justify-content: center;
+      }
+      .main-header .right button,
+      .main-header .right-right button {
+        width: 100%;
+      }
+      .for-country-absolute{
+        top: 0;
+          width: 368px;
+      }
+      .protocol-token-modal,
+      .warning-modal,
+      .select-token-modal,
+      .select-country-modal {
+    width: 90%;
+    max-width: 468px;
+    border-radius: 20px;
+    /* height: 93%; */
+  }
+  /* .protocol-scroll {
+    height: 300px;
+  } */
+  .content-trade {
+    min-width: 300px;
+    /* padding: 10px; */
+    gap: 10px;
+  }
+  .content-trade .top,
+  .content-trade .center,
+  .content-trade .bottom {
+    min-width: 250px;
+  }
+  .content-trade .top .left h1,
+    .content-trade .center .left h1 {
+      font-size: 32px;
+    }
+    .content-trade .top,
+    .content-trade .center,
+    .content-trade .bottom {
+      padding: 10px;
+    }
+    .content-trade-top {
+      /* flex-direction: column; */
+      gap: 0px;
+      margin-top: 30px;
+    }
+  
+    .button-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .main-pool-page{
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    /* .limit-trade, .send-trade, .buy-trade {
+      width: 100%; 
+    } */
+    .main-header {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: 25px;
+      }
+      .nav-list{
+        display: none;
+      }
+      .hamburger-main{
+        display: none;
+      }
+  }
+    @media screen and (max-width: 576px) {
+    .main-header {
+      margin-inline: 5px;
+    }
+    .landing-page-content .heading h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    .content-center {
+      padding: 10px;
+      gap: 10px;
+    }
+    .content-trade {
+      gap: 10px;
+    }
+    .limit-trade .top .left h1 {
+        font-size: 24px; 
+      }
+      .dropdown-content {
+        width: 100%; 
+      }
+  }
+  
+ 
+  @media screen and (max-width: 425px) {
+    .dropdown-header{
+        width: 300px;
+    }
+  }
+@media (max-width: 1200px) {
+    .limit-trade .top, .send-trade .top, .buy-trade .top {
+      padding: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #f1f1f1;
+      }
+    .main-pool-page .left .center, .main-pool-page .right .center {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .main-pool-page {
+      padding-inline: 15px;
+    }
+  }
+
+
+
+
+
+/*========================== HEADER CSS =========================*/
+
+  @media (max-width: 768px) {
+    .main-header {
+      margin-inline: 15px;
+    }
+    .main-header .header-left, .main-header .right, .main-header .right-right {
+      gap: 15px;
+    }
+    .hamburger {
+      display: block;
+    }
+    .nav-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .main-header .right button {
+      height: 45px;
+      width: 120px;
+      font-size: 14px;
+    }
+    .toggle-button { 
+      top: 20px;
+      right: 40px;
+  }
+  .with-sidebar .toggle-button {
+    right: 270px;
+}
+  }
+  
+  @media (max-width: 480px) {
+    .main-header {
+      margin-inline: 10px;
+    }
+    .hamburger-main {
+      padding: 3px 8px;
+    }
+    .main-header .right button {
+      height: 40px;
+      width: 110px;
+    }
+    .main-header .right-right button {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+    .nav-list {
+      gap: 10px;
+    }
+    .input-display .right input {
+      width: 100px;
+    }
+    .toggle-button {
+      top: 12px;
+      right: 30px;
+  }
+  .fees-earn-dropdown-content{
+    flex-direction: column;
+  }
+  }
+  @media (max-width: 390px) {
+    .input-display .right input {
+      width: 50px;
+  }
+  .toggle-button {
+    top: 10px;
+    right: 20px;
+}
+  } 
+  
+  @media (max-width: 320px) {
+    .main-header {
+      margin-inline: 5px;
+    }
+    .hamburger-main {
+      padding: 2px 6px;
+    }
+    .hamburger-main .right .right input {
+      font-size: 14px;
+    }
+    .main-header .right button {
+      height: 35px;
+      width: 100px;
+      font-size: 12px;
+    }
+    .main-header .right-right button {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+    .nav-list {
+      gap: 5px;
+      font-size: 14px;
+    }
+    .mobile-nav.active button {
+      height: 40px;
+      width: 130px;
+      font-size: 14px;
+    }
+    .input-display .right input {
+      width: 30px;
+  }
+  }
+
+  /*============================ LANDING PAGE CSS ==============================*/
+
+  @media (max-width: 768px) {
+    .main-landing-page {
+      padding-top: 20px;
+    }
+    .landing-page-content {
+      margin-top: 30px;
+    }
+    .landing-page-content .heading h1 {
+      font-size: 48px;
+    }
+    .content-center {
+      min-width: 400px;
+      padding: 8px 8px;
+      gap: 10px;
+      margin-top: 60px;
+    }
+    .content-center .top, 
+    .content-center .center, 
+    .content-center .bottom {
+      min-width: 350px;
+      padding: 8px 16px;
+    }
+    .content-center .right {
+      min-width: 130px;
+      height: 35px;
+    }
+    .content-center .right button {
+      font-size: 16px;
+    }
+    .content-center .bottom button {
+      font-size: 16px;
+    }
+    .landing-page-content .description p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-page-content .heading h1 {
+      font-size: 40px;
+    }
+    .content-center {
+      min-width: 300px;
+      gap: 8px;
+    }
+    .content-center .top, 
+    .content-center .center, 
+    .content-center .bottom {
+      min-width: 280px;
+      padding: 6px 12px;
+    }
+    .content-center .right {
+      min-width: 100px;
+      height: 30px;
+    }
+    .content-center .right button {
+      font-size: 14px;
+    }
+    .content-center .bottom button {
+      font-size: 14px;
+    }
+    .landing-page-content .description p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .main-landing-page {
+      padding-top: 10px;
+    }
+    .landing-page-content {
+      margin-top: 20px;
+    }
+    .landing-page-content .heading h1 {
+      font-size: 32px;
+    }
+    .content-center {
+      min-width: 260px;
+      padding: 6px 6px;
+      gap: 6px;
+    }
+    .content-center .top, 
+    .content-center .center, 
+    .content-center .bottom {
+      min-width: 240px;
+      padding: 4px 10px;
+    }
+    .content-center .right {
+      min-width: 90px;
+      height: 25px;
+    }
+    .content-center .right button {
+      font-size: 12px;
+    }
+    .content-center .bottom button {
+      font-size: 12px;
+    }
+    .landing-page-content .description p {
+      font-size: 10px;
+    }
+    .download-icon {
+      margin-top: -20px;
+      margin-bottom: -25px;
+    }
+  }
+
+  /*======================== PROTOCOL TOKEN MODAL CSS =============================*/
+
+  @media (max-width: 480px) {
+    .protocol-token-modal {
+      width: 90%;
+      /* height: auto; */
+      padding: 15px;
+    }
+    .main-modal-content h1 {
+      font-size: 22px;
+    }
+    /* .protocol-scroll {
+      height: 300px;
+    } */
+    .search-input {
+      gap: 8px;
+      padding-inline: 8px;
+    }
+    .search-input input {
+      font-size: 14px;
+      height: 28px;
+    }
+    .star-token p,
+    .protocol-token h2,
+    .protocol-token .right p {
+      font-size: 18px;
+    }
+    .search-error p:nth-child(2) {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .protocol-token-modal {
+      width: 90%;
+      /* height: auto; */
+      padding: 10px;
+    }
+    .main-modal-content h1 {
+      font-size: 20px;
+    }
+    /* .protocol-scroll {
+      height: 250px;
+    } */
+    .search-input {
+      gap: 5px;
+      padding-inline: 5px;
+    }
+    .search-input input {
+      font-size: 12px;
+      height: 25px;
+    }
+    .star-token p,
+    .protocol-token h2,
+    .protocol-token .right p {
+      font-size: 16px;
+    }
+    .search-error p:nth-child(2) {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  /*========================== WARNING MODAL CSS ===========================*/
+
+  @media (max-width: 480px) {
+    .warning-modal {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+    }
+    .warning-modal h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+    .warning-modal p {
+      font-size: 16px;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .warning-modal {
+      width: 95%;
+      height: auto;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .warning-modal h1 {
+      font-size: 24px;
+    }
+    .warning-modal p {
+      font-size: 14px;
+    }
+    .understand {
+      gap: 15px;
+    }
+    .understand button:nth-child(1),
+    .understand button:nth-child(2) {
+      font-size: 16px;
+    }
+  }
+
+  /*============================= SELECT TOKEN MODAL CSS =============================*/
+
+  @media (max-width: 780px) {
+    .select-token-modal,
+    .select-country-modal {
+      width: 85%;
+      padding: 15px;
+      border-radius: 20px;
+    }
+    .select-token {
+      gap: 8px;
+    }
+    .select-token h2 {
+      font-size: 22px;
+    }
+    .select-token .right p {
+      font-size: 16px;
+    }
+    .ethereum-array-container {
+      gap: 8px;
+    }
+    .ethereum-arr {
+      width: 70px;
+      height: 70px;
+    }
+    .ethereum-arr p {
+      font-size: 16px;
+    }
+    .swap-network p {
+      font-size: 16px;
+    }
+    .swap-network button {
+      font-size: 16px;
+      padding: 8px 10px;
+    }
+  }
+    @media (max-width: 480px) {
+    .select-token-modal,
+    .select-country-modal {
+      width: 90%;
+      padding: 10px;
+    }
+    .select-token h2 {
+      font-size: 20px;
+    }
+    .select-token .right p {
+      font-size: 14px;
+    }
+    .ethereum-array-container {
+      gap: 6px;
+    }
+    .ethereum-arr {
+      width: 60px;
+      height: 60px;
+    }
+    .ethereum-arr p {
+      font-size: 14px;
+    }
+    .swap-network button {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    .country-input {
+      width: 95%;
+    }
+  }
+  @media (max-width: 425px) {
+    .country-input {
+      width: 75%;
+    }
+  }
+  @media (max-width: 320px) {
+    .select-token-modal,
+    .select-country-modal {
+      width: 89%;
+      padding: 8px;
+    }
+    .select-token h2 {
+      font-size: 18px;
+    }
+    .select-token .right p {
+      font-size: 12px;
+    }
+    .ethereum-arr {
+      width: 50px;
+      height: 50px;
+    }
+    .ethereum-arr p {
+      font-size: 12px;
+    }
+    .swap-network p {
+      font-size: 12px;
+    }
+    .swap-network button {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+    /* .country-input {
+      width: 95%;
+    } */
+  }
+  
+  /*============================ TRADE CSS ==========================*/
+
+@media (max-width: 780px) {
+    .content-trade {
+      /* min-width: 100%; */
+      gap: 10px;
+    }
+    .limit-trade .left{
+      width: 500px;
+    }
+    .content-trade .top .left h1,
+    .content-trade .center .left h1 {
+      font-size: 48px;
+    }
+    .content-trade-top {
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .trade-ul {
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+    .trade-ul-active {
+      padding: 8px 10px;
+    }
+    .button-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .button-bottom .left-side p {
+      text-align: center;
+    }
+    .dropdown-header {
+      width: 100%;
+    }
+    .dropdown-content {
+      width: 100%;
+    }
+    .dropdown-item p:nth-child(1) {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 580px) {
+    .limit-trade .top .left p:nth-child(1){
+      font-size: 12px;
+      width: 150px;
+    }
+    .limit-trade .left{
+      width: 50px;
+    }
+  }
+  @media (max-width: 585px) {
+    .limit-trade-top-right{
+      gap: 3px;
+    }
+    .expiry-right{
+      gap: 10px;
+    }
+    .expiry{
+      gap: 13px;
+    }
+  }
+  @media (max-width: 480px) {
+    .content-trade {
+      gap: 8px;
+    }
+    .content-trade .top .left h1,
+    .content-trade .center .left h1 {
+      font-size: 36px;
+    }
+    .content-trade .right button {
+      font-size: 14px;
+    }
+    .content-trade-top {
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .trade-ul {
+      gap: 3px;
+      font-size: 14px;
+    }
+    .button-bottom {
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .button-bottom .right-side p {
+      font-size: 14px;
+    }
+    .dropdown-header p {
+      font-size: 14px;
+    }
+    .dropdown-item p:nth-child(1) {
+      font-size: 12px;
+    }
+  }
+  
+@media (max-width: 420px) {
+  .expiry-right {
+    gap: 5px;
+    font-size: 14px;
+  }
+  .expiry {
+    gap: 20px;
+}
+
+}
+@media (max-width: 400px) {
+  .for-country-absolute {
+    width: 315px;
+  }
+}
+@media (max-width: 350px) {
+  .for-country-absolute {
+    width: 305px;
+  }
+}
+
+  @media (max-width: 320px) {
+    .content-trade {
+      gap: 5px;
+    }
+    .content-trade .top .left h1,
+    .content-trade .center .left h1 {
+      font-size: 28px;
+    }
+    .content-trade .right button {
+      font-size: 12px;
+    }
+    .content-trade-top {
+      margin-top: 10px;
+      gap: 10px;
+    }
+    .trade-ul {
+      font-size: 12px;
+      gap: 2px;
+    }
+    .trade-ul-active {
+      padding: 5px 8px;
+    }
+    .button-bottom {
+      gap: 10px;
+    }
+    .button-bottom .right-side p {
+      font-size: 12px;
+    }
+    .dropdown-header p {
+      font-size: 12px;
+    }
+    .dropdown-item p:nth-child(1) {
+      font-size: 10px;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+    }
+    .market {
+      gap: 12px;
+    }
+    .for-country-absolute {
+      width: 260px;
+    }
+  }
+
+/*============================ SETTING MODAL CSS ============================*/
+
+@media (max-width: 780px) {
+    .modal {
+      width: 280px;
+      height: auto;
+      padding: 15px;
+    }
+    .modal h2 {
+      font-size: 22px;
+    }
+    .setting-auto {
+      align-items: flex-start;
+      width: 100%;
+    }
+    .setting-auto .right {
+      padding: 8px;
+      width: auto;
+    }
+    .setting-default {
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .close-button {
+      height: 40px;
+      font-size: 16px;
+    }
+    .switch {
+      width: 30px;
+      height: 18px;
+    }
+    .switch .slider {
+      border-radius: 15px;
+      height: 17px;
+      width: 32px;
+    }
+    .slider:before {
+      height: 12px;
+      width: 12px;
+    }
+    .description,
+    .includes {
+      font-size: 14px;
+    }
+    .setting-modal-top {
+      gap: 30px;
+    }
+    .back-button {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px) {
+    .modal {
+      width: 260px;
+      padding: 12px;
+    }
+    .modal h2 {
+      font-size: 20px;
+    }
+    .setting-auto {
+      gap: 10px;
+      width: 100%;
+    }
+    .setting-default {
+      gap: 15px;
+    }
+    .close-button {
+      height: 35px;
+      font-size: 14px;
+    }
+    .switch {
+      width: 25px;
+      height: 15px;
+    }
+    .switch .slider {
+      border-radius: 12px;
+      height: 14px;
+    }
+    .slider:before {
+      height: 10px;
+      width: 10px;
+    }
+    .setting-modal-top {
+      gap: 20px;
+    }
+    .back-button {
+      font-size: 14px;
+    }
+    .setting p:nth-child(2) {
+      padding: 10px 10px;
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .modal {
+      width: 240px;
+      padding: 10px;
+    }
+    .modal h2 {
+      font-size: 18px;
+    }
+    .setting-default {
+      gap: 10px;
+    }
+    .close-button {
+      height: 30px;
+      font-size: 12px;
+    }
+    .switch {
+      width: 22px;
+      height: 12px;
+    }
+    .switch .slider {
+      border-radius: 10px;
+      height: 12px;
+    }
+    .slider:before {
+      height: 8px;
+      width: 8px;
+    }
+    .setting-modal-top {
+      gap: 15px;
+    }
+    .back-button {
+      font-size: 12px;
+    }
+  }
+
+  /*============================= LIMIT CSS =============================*/
+
+@media (max-width: 780px) {
+    .limit-trade {
+      min-width: 380px;
+      gap: 12px;
+    }
+    .limit-trade .top,
+    .limit-trade .center,
+    .limit-trade .bottom {
+      width: 70%;
+      padding: 8px 15px;
+    }
+    .limit-trade .top .left h1,
+    .limit-trade .center .left h1 {
+      font-size: 32px;
+    }
+    .limit-trade .top .right,
+    .limit-trade .center .right {
+      min-width: 120px;
+      height: 35px;
+      padding: 6px;
+    }
+    .limit-trade .top .right button,
+    .limit-trade .center button {
+      font-size: 16px;
+    }
+    .trade-ul {
+      gap: 15px;
+    }
+    .limit-active {
+      padding: 8px 12px;
+    }
+    .button-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .button-bottom .left-side p {
+      font-size: 16px;
+    }
+    .button-bottom .right-side p {
+      font-size: 16px;
+    }
+    .dropdown-content {
+      width: 100%;
+    }
+    .market p {
+      font-size: 14px;
+    }
+    .expiry {
+      gap: 80px;
+    }
+    .warning-error {
+      gap: 15px;
+      padding-inline: 8px;
+      width: 71%;
+    }
+    .warning-error p {
+      font-size: 12px;
+    }
+    .warning-error .right button {
+      font-size: 14px;
+    }
+      .dropdown-item p:nth-child(1) {
+      font-size: 14px;
+    }
+    .info-icon {
+      font-size: 10px;
+    }
+    .dropdown-header p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .limit-trade {
+      min-width: 320px;
+      /* padding: 6px; */
+      gap: 10px;
+    }
+    .limit-trade .top .left h1,
+    .limit-trade .center .left h1 {
+      font-size: 28px;
+    }
+    .limit-trade .top .right,
+    .limit-trade .center .right {
+      min-width: 100px;
+      height: 30px;
+    }
+    .limit-trade .top .right button,
+    .limit-trade .center button {
+      font-size: 14px;
+    }
+    .trade-ul {
+      gap: 12px;
+    }
+    .limit-active {
+      padding: 6px 10px;
+    }
+    .button-bottom {
+      gap: 30px;
+    }
+    .button-bottom .left-side p {
+      font-size: 14px;
+    }
+    .button-bottom .right-side p {
+      font-size: 14px;
+    }
+    .dropdown-content {
+      width: 100%;
+    }
+    .market p {
+      font-size: 12px;
+    }
+    .expiry {
+      gap: 20px;
+    }
+    .warning-error {
+      gap: 12px;
+      padding-inline: 6px;
+    }
+    .warning-error p {
+      font-size: 11px;
+    }
+    .warning-error .right button {
+      font-size: 12px;
+    }
+      .dropdown-item p:nth-child(1) {
+      font-size: 13px;
+    }
+    .info-icon {
+      font-size: 9px;
+    }
+    .dropdown-header p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .limit-trade {
+      min-width: 280px;
+      gap: 8px;
+    }
+    .limit-trade .top .left h1,
+    .limit-trade .center .left h1 {
+      font-size: 24px;
+    }
+    .limit-trade .top .right,
+    .limit-trade .center .right {
+      min-width: 80px;
+      height: 28px;
+    }
+    .limit-trade .top .right button,
+    .limit-trade .center button {
+      font-size: 12px;
+    }
+    .trade-ul {
+      gap: 10px;
+    }
+    .limit-active {
+      padding: 5px 8px;
+    }
+    .button-bottom {
+      gap: 20px;
+    }
+    .button-bottom .left-side p {
+      font-size: 12px;
+    }
+    .button-bottom .right-side p {
+      font-size: 12px;
+    }
+    .dropdown-content {
+      width: 100%;
+    }
+    .market p {
+      font-size: 10px;
+    }
+  
+    .warning-error {
+      gap: 10px;
+      padding-inline: 5px;
+    }
+    .warning-error p {
+      font-size: 10px;
+    }
+    .warning-error .right button {
+      font-size: 10px;
+    }
+    .dropdown-item p:nth-child(1) {
+      font-size: 12px;
+    }
+    .info-icon {
+      font-size: 8px;
+    }
+    .dropdown-header p {
+      font-size: 12px;
+    }
+  }
+
+/*======================== SEND CSS ========================*/
+
+@media (max-width: 780px) {
+    .send-trade {
+      min-width: 380px;
+      padding: 8px;
+      gap: 12px;
+    }
+    .send-trade .top,
+    .send-trade .center,
+    .send-trade .bottom {
+      /* width: 100%; */
+      padding: 8px 15px;
+    }
+    .send-trade .top .down h1 {
+      font-size: 32px;
+    }
+    .send-trade .top .down p:nth-child(2) {
+      font-size: 16px;
+    }
+    .send-trade .top .down p:nth-child(3) {
+      font-size: 16px;
+    }
+    .send-trade .top .left p {
+      font-size: 16px;
+    }
+    .send-trade .center .left .left {
+      gap: 15px;
+    }
+    .send-trade .center .right p {
+      font-size: 16px;
+    }
+    .send-trade .center .right p:nth-child(2) {
+      font-size: 14px;
+    }
+    .send-trade .bottom .left p {
+      font-size: 16px;
+    }
+    .send-trade-button {
+      height: 40px;
+      width: 76%;
+    }
+    .send-trade-button button {
+      font-size: 16px;
+    }
+    .send-trade-button:hover {
+      background: #5e5ae9;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .send-trade {
+      min-width: 320px;
+      padding: 6px;
+      gap: 10px;
+    }
+    .send-trade .top,
+    .send-trade .center,
+    .send-trade .bottom {
+      /* width: 100%; */
+      padding: 6px 12px;
+    }
+    .send-trade .top .down h1 {
+      font-size: 28px;
+    }
+    .send-trade .top .down p:nth-child(2) {
+      font-size: 14px;
+    }
+    .send-trade .top .down p:nth-child(3) {
+      font-size: 14px;
+    }
+    .send-trade .top .left p {
+      font-size: 14px;
+    }
+    .send-trade .center .left .left {
+      gap: 10px;
+    }
+    .send-trade .center .right p {
+      font-size: 14px;
+    }
+    .send-trade .center .right p:nth-child(2) {
+      font-size: 12px;
+    }
+    .send-trade .bottom .left p {
+      font-size: 14px;
+    }
+    .send-trade-button {
+      height: 38px;
+    }
+    .send-trade-button button {
+      font-size: 14px;
+    }
+    .send-trade-button:hover {
+      background: #5e5ae9;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .send-trade {
+      min-width: 280px;
+      padding: 5px;
+      gap: 8px;
+    }
+    .send-trade .top,
+    .send-trade .center,
+    .send-trade .bottom {
+      /* width: 100%; */
+      padding: 5px 10px;
+    }
+    .send-trade .top .down h1 {
+      font-size: 24px;
+    }
+    .send-trade .top .down p:nth-child(2) {
+      font-size: 12px;
+    }
+    .send-trade .top .down p:nth-child(3) {
+      font-size: 12px;
+    }
+    .send-trade .top .left p {
+      font-size: 12px;
+    }
+    .send-trade .center .left .left {
+      gap: 8px;
+    }
+    .send-trade .center .right p {
+      font-size: 12px;
+    }
+    .send-trade .center .right p:nth-child(2) {
+      font-size: 10px;
+    }
+    .send-trade .bottom .left p {
+      font-size: 12px;
+    }
+    .send-trade-button {
+      height: 35px;
+    }
+    .send-trade-button button {
+      font-size: 12px;
+    }
+    .send-trade-button:hover {
+      background: #5e5ae9;
+    }
+  }
+
+/*=========================== BUY CSS =========================*/
+
+@media (max-width: 780px) {
+    .buy-trade {
+      min-width: 380px;
+      padding: 8px;
+      gap: 12px;
+    }
+    .buy-trade .top,
+    .buy-trade .bottom {
+      width: 70%;
+      padding: 8px 15px;
+    }
+    .buy-trade .top .down h1 {
+      font-size: 32px;
+    }
+    .buy-trade .top .down p:nth-child(2) {
+      font-size: 16px;
+    }
+    .buy-trade .top .down p:nth-child(3) {
+      font-size: 16px;
+    }
+    .buy-trade .top .left p {
+      font-size: 16px;
+    }
+    .buy-trade .top .up p {
+      font-size: 16px;
+    }
+    .buy-trade .left {
+      font-size: 16px;
+    }
+    .buy-trade-button {
+      height: 40px;
+      width: 77%;
+    }
+    .buy-trade-button button {
+      font-size: 16px;
+    }
+    .buy-trade-button:hover {
+      background: linear-gradient(to right ,#878080, #5957d3 );
+    }
+    .indian-flag {
+      padding: 6px 10px;
+    }
+    .indian-flag-button {
+      font-size: 14px;
+    }
+    .stsearch-box input {
+      width: 70px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buy-trade {
+      min-width: 320px;
+      padding: 6px;
+      gap: 10px;
+    }
+    .buy-trade .top,
+    .buy-trade .bottom {
+      width: 70%;
+      padding: 6px 12px;
+    }
+    .buy-trade .top .down h1 {
+      font-size: 28px;
+    }
+    .buy-trade .top .down p:nth-child(2) {
+      font-size: 14px;
+    }
+    .buy-trade .top .down p:nth-child(3) {
+      font-size: 14px;
+    }
+    .buy-trade .top .left p {
+      font-size: 14px;
+    }
+    .buy-trade .top .up p {
+      font-size: 14px;
+    }
+    .buy-trade .left {
+      font-size: 14px;
+    }
+    .buy-trade-button {
+      height: 38px;
+    }
+    .buy-trade-button button {
+      font-size: 14px;
+    }
+    .buy-trade-button:hover {
+      background: linear-gradient(to right ,#878080, #5957d3 );
+    }
+    .indian-flag {
+      padding: 5px 8px;
+    }
+    .indian-flag-button {
+      font-size: 12px;
+    }
+    .stsearch-box input {
+      width: 60px;
+    }
+  }
+
+    @media (max-width: 320px) {
+    .buy-trade {
+      min-width: 280px;
+      padding: 5px;
+      gap: 8px;
+    }
+    .buy-trade .top,
+    .buy-trade .bottom {
+      width: 70%;
+      padding: 5px 10px;
+    }
+    .buy-trade .top .down h1 {
+      font-size: 24px;
+    }
+    .buy-trade .top .down p:nth-child(2) {
+      font-size: 12px;
+    }
+    .buy-trade .top .down p:nth-child(3) {
+      font-size: 12px;
+    }
+    .buy-trade .top .left p {
+      font-size: 12px;
+    }
+    .buy-trade .top .up p {
+      font-size: 12px;
+    }
+    .buy-trade .left {
+      font-size: 12px;
+    }
+    .buy-trade-button {
+      height: 35px;
+    }
+    .buy-trade-button button {
+      font-size: 12px;
+    }
+    .buy-trade-button:hover {
+      background: linear-gradient(to right ,#878080, #5957d3 );
+    }
+    .indian-flag {
+      padding: 4px 6px;
+    }
+    .indian-flag-button {
+      font-size: 10px;
+    }
+    .stsearch-box input {
+      width: 50px;
+    }
+  }  
+
+/*====================== POOL NEW PAGE CSS =========================*/
+
+@media (max-width: 768px) {
+    .main-pool-page {
+      flex-direction: column;
+      padding: 15px;
+    }
+    .main-pool-page .left .center, .main-pool-page .right .center {
+      width: 93%;
+      padding: 15px;
+    }
+    .main-pool-page .left .center h6, .main-pool-page .right .center p {
+      font-size: 16px; 
+    }
+    .table-container-pool {
+      margin: 20px 0;
+      width: 100%;
+    }
+    .custom-table-pool thead th, .custom-table-pool tbody td {
+      padding: 10px 8px;
+    }
+    .pool-bottom-button {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+    .pool-bottom-button button {
+      font-size: 14px;
+    }
+    .explore-bottom-table {
+      flex-direction: column-reverse;
+      /* margin-top: 180px; */
+    }
+    .explore-bottom-table-detail {
+      flex-direction: column-reverse;
+      margin-top: 180px;
+      align-items: start;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .explorelinechart{
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 480px) {
+    .main-pool-page {
+      padding: 10px;
+    }
+    .main-pool-page .left .center, .main-pool-page .right .center {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .custom-table-pool thead th, .custom-table-pool tbody td {
+      padding: 8px 5px;
+    }
+    .pool-bottom-button button {
+      font-size: 14px;
+    }
+    .fee {
+      font-size: 10px;
+    }
+    .deposit-tokens .left h1 {
+      font-size: 40px;
+    }
+    .deposit-tokens .right .top-right h1 {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-new-position {
+      margin-top: 20px;
+      padding-inline: 15px;
+    }
+    .select-token-pairs {
+      flex-direction: column;
+      gap: 20px;
+      padding-inline: 15px;
+    }
+    .select-token-pairs .left-side,
+    .select-token-pairs .right-side {
+      width: 100%;
+    }
+    .step-one, .step-two, .step-three {
+      gap: 10px;
+      padding-inline: 10px;
+    }
+    /* .price-range .top,  */
+    .price-range .bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .fees-earn {
+      /* flex-direction: column; */
+      gap: 10px;
+    }
+    .fees-earn .right {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .graph-bottom-top {
+      flex-direction: column;
+      gap: 15px;
+    }
+    /* .deposit-amount .top, */
+    .deposit-amount .center,
+    .deposit-amount .bottom {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .deposit-amount .top .left,
+    .deposit-amount .top .right {
+      justify-content: center;
+    }
+    .deposit-tokens .right {
+      align-items: stretch;
+    }
+    .pool-detail-page {
+      flex-direction: column;
+      gap: 15px;
+    }
+    /* .alice-bob {
+      flex-direction: column;
+      gap: 15px;
+    } */
+    .top-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link-row {
+      flex-direction: column;
+    }
+    .token-detail-page {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .graph-data-not-available {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+    .reset-modal {
+      width: 90%;
+    }
+    .main-sidebar {
+      max-width: 250px;
+    }
+    .cross-icon-modal-header {
+      top: -45px;
+      left: -150px;
+  }
+    /* .toggle-button {
+      right: 20px; 
+    } */
+    .setting-sidebar,
+    .disconnect-sidebar,
+    .currency-sidebar,
+    .language-sidebar {
+      max-width: 250px; 
+    }
+    .sidebar-container {
+      padding-inline: 15px;
+    }
+    .sidebar-token h3, 
+    .sidebar-token p {
+      text-align: center;
+    }
+    .sidebar-ul {
+      gap: 15px; 
+      font-size: 16px; 
+    }
+    .sidebar-center .sidebar-center-left,
+    .sidebar-center .sidebar-center-right {
+      font-size: 16px; 
+      padding: 8px; 
+    }
+    .currency-sidebar, .language-sidebar {
+      width: 250px;
+    }
+    .currency-data-currencies ul,
+    .language-data-languages ul {
+      font-size: 18px; 
+    }
+    .token-detail-page {
+      padding-inline: 10px;
+      gap: 15px;
+    }
+    .token-detail-heading h2 {
+      font-size: 18px; 
+    }
+    .token-detail-table td {
+      font-size: 18px;
+    }
+    .token-detail-table th {
+      font-size: 14px;
+    }
+    .token-detail-price p {
+      gap: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+    .graph-data-not-available {
+      padding: 15px;
+      border-radius: 15px;
+    }
+    .explore-bar-top{
+      margin-top: 80px;
+    }
+    .main-pool-page .right {
+      margin-top: -50px;
+    }
+    .link-row .left p{
+      margin: 0;
+    }
+    .link-row .right {
+      margin: 7px 0px;
+    }
+    .link-row .right p{
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .explore-bottom-table-detail .right{
+      flex-direction: column;
+    }
+    .alice-bob{
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 15px;
+      align-items: start;
+    }
+  }
+  @media (max-width: 480px) {
+    .main-new-position {
+      padding-inline: 10px;
+    }
+    .new-position-reset .reset-icon {
+      padding: 5px;
+    }
+    .new-position-reset .left h1{
+      font-size: 26px;
+    }
+    .select-token-pairs {
+      padding-inline: 10px;
+    }
+    .select-token-pairs .left-side, 
+    .select-token-pairs .right-side {
+      border-radius: 15px;
+    }
+    .step-one .left, 
+    .step-two .left, 
+    .step-three .left {
+      font-size: 16px;
+    }
+    .fees-earn {
+      border-radius: 10px;
+    }
+    /* .price-range .top,  */
+    .price-range .bottom {
+      padding: 10px;
+      border-radius: 15px;
+    }
+    .full-range .left, 
+    .full-range .right {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .price-range .bottom .description p{
+      font-size: 14px;
+    }
+    /* .select-token-pairs .left-side hr{
+      display: none;
+    } */
+    .with-sidebar .toggle-button {
+      right: 255px;
+    }
+    /* .deposit-amount .top, */
+    .deposit-amount .center,
+    .deposit-amount .bottom {
+      padding: 10px;
+    }
+    .deposit-amount .top {
+      gap: 20px;
+    }
+    .deposit-amount .top .right {
+      padding: 10px;
+    }
+    .pool-detail-page-stats h1 {
+      font-size: 24px;
+    }
+    .pool-detail-volume .bottom p,
+    .pool-detail-tvl .bottom p,
+    .pool-detail-fees .bottom p {
+      font-size: 28px;
+    }
+    .links h1 {
+      font-size: 28px;
+    }
+    .reset-modal-heading {
+      font-size: 20px;
+    }
+    .sidebar-ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sidebar-center {
+      flex-direction: column; 
+      gap: 5px;
+    }
+    /* .toggle-button {
+      top: 15px; 
+      right: 15px;
+    } */
+    .buy-crypto, 
+    .receive-crypto-disconnect {
+      padding: 8px; 
+    }
+    .receive-crypto-modal h1,
+    .receive-crypto-modal p {
+      font-size: 14px; 
+    }
+    .disconnect-sidebar .top{
+      flex-direction: column;
+      gap: 0;
+    }
+    .sidebar-center .sidebar-center-left, .sidebar-center .sidebar-center-right{
+      width: 80%;
+    }
+    .buy-crypto, 
+    .receive-crypto-disconnect {
+      width: 80%; 
+      font-size: 14px; 
+    }
+    .token-detail-page {
+      flex-direction: column; 
+      gap: 20px; 
+      padding-inline: 15px; 
+    }
+    .token-detail-page .right-detail {
+      flex: 1; 
+    }
+    .token-detail-heading h2 {
+      font-size: 20px; 
+      /* text-align: center;  */
+    }
+    .token-detail-table td {
+      font-size: 20px; 
+      text-align: left; 
+    }
+    .token-detail-table th {
+      font-size: 16px; 
+    }
+    .token-detail-price p {
+      padding: 10px 15px; 
+      font-size: 14px;
+    }
+    .content-trade-top-token-detail {
+      gap: 20px; 
+      margin-top: 20px; 
+    }
+    .graph-data-not-available {
+      width: 100%; 
+      height: auto; 
+      padding: 15px; 
+      border-radius: 15px; 
+      text-align: center; 
+    }
+    .graph-data-not-available .right p:nth-child(1),
+    .graph-data-not-available .right p:nth-child(2) {
+      font-size: 14px; 
+    }
+  }
+
+    @media (max-width: 420px) {
+      .step-one .right span, .step-two .right span, .step-three .right span {
+        font-size: 18px;
+      }
+    }
+  @media (max-width: 380px) {
+    .swap-info-center{
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 320px) {
+    .main-new-position {
+      padding-inline: 5px;
+    }
+    .select-token-pairs {
+      padding-inline: 5px;
+    }
+    .price-range .top {
+      padding: 5px 10px;
+    }
+    .price-range .bottom {
+      padding: 5px 10px;
+    }
+    .step-one .left, 
+    .step-two .left, 
+    .step-three .left {
+      font-size: 14px;
+    }
+    .step-one .right p, 
+    .step-two .right p, 
+    .step-three .right p {
+      font-size: 14px;
+    }
+    .full-range .left, 
+    .full-range .right {
+      font-size: 18px;
+    }
+    .select-pair .heading h1 {
+      font-size: 20px;
+    }
+    .select-pair .heading p {
+      font-size: 14px;
+    }
+    .fees-earn .left p {
+      font-size: 14px;
+    }
+    .fees-earn .right {
+      font-size: 14px;
+      padding: 5px;
+    }
+    .graph-bottom-top {
+      gap: 10px;
+    }
+    .deposit-amount {
+      gap: 20px;
+    }
+    .deposit-tokens {
+      gap: 15px;
+    }
+    .top-buttons {
+      gap: 5px;
+    }
+    .token-detail-page {
+      gap: 10px;
+    }
+    .reset-modal {
+      padding: 15px;
+    }
+    .reset-modal-heading {
+      font-size: 18px;
+    }
+    .sidebar-token {
+      padding-inline: 10px;
+    }
+    .receive-crypto-modal h1,
+    .receive-crypto-modal p {
+      font-size: 12px;
+    }
+    .currency-data-currencies ul,
+    .language-data-languages ul {
+      font-size: 16px; 
+    }
+    .token-detail-page {
+      padding-inline: 5px; 
+      gap: 10px; 
+    }
+    .token-detail-heading h2 {
+      font-size: 16px;
+    }
+    .token-detail-table td {
+      font-size: 16px; 
+    }
+    .token-detail-table th {
+      font-size: 12px;
+    }
+    .token-detail-price p {
+      gap: 4px;
+      padding: 6px 10px; 
+      font-size: 10px;
+    }
+    .graph-data-not-available {
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .graph-data-not-available .right p:nth-child(1),
+    .graph-data-not-available .right p:nth-child(2) {
+      font-size: 10px; 
+    }
+    .receive-crypto-modal{
+      width: 250px;
+    }
+  }
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .pool-detail-page {
+      flex-direction: column;
+      padding-inline: 20px;
+      gap: 20px;
+      align-items: stretch;
+    }
+  
+    /* .alice-bob {
+      flex-direction: column;
+      gap: 15px;
+    } */
+  
+    .top-buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .top-buttons .left, .top-buttons .right {
+      width: 100%;
+    }
+    .pool-detail-expire-left {
+      flex-wrap: wrap;
+    }
+  
+    .pool-detail-page-stats {
+      padding: 10px 15px;
+    }
+  
+    .link-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .logo-img {
+      height: 35px;
+      width: 35px;
+      font-size: 12px;
+    }
+  
+    .logo-img-name h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+    .logo-img-name span {
+      font-size: 14px;
+    }
+  
+    .pool-detail-page-stats h1 {
+      font-size: 28px;
+    }
+  
+    .pool-detail-page-stats p:nth-child(2) {
+      font-size: 16px;
+    }
+    .explore-bottom-table .right{
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  .send-trade .top, .send-trade .center, .send-trade .bottom{
+    width: 70%;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .pool-detail-page {
+      padding-inline: 15px;
+      gap: 15px;
+    }
+  
+    .alice-bob {
+      gap: 10px;
+    }
+  
+    .logo-img {
+      height: 30px;
+      width: 30px;
+      font-size: 10px;
+    }
+  
+    .logo-img-name h1 {
+      font-size: 18px;
+    }
+  
+    .logo-img-name span {
+      font-size: 12px;
+    }
+  
+    .token-detail-volume p {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .top-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .top-buttons .left button, .top-buttons .right button {
+      font-size: 14px;
+    }
+  
+    .pool-detail-page-stats h1 {
+      font-size: 24px;
+    }
+  
+    .pool-detail-page-stats p:nth-child(2) {
+      font-size: 14px;
+    }
+  
+    .link-row .left p:nth-child(1) {
+      height: 30px;
+      width: 30px;
+      font-size: 14px;
+    }
+  
+    .link-row .right p:nth-child(1) {
+      font-size: 14px;
+    }
+    .pool-detail-expire{
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .pool-detail-volume .bottom p, .pool-detail-tvl .bottom p, .pool-detail-fees .bottom p{
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 320px) {
+    .pool-detail-page {
+      padding-inline: 10px;
+      gap: 10px;
+    }
+  
+    /* .alice-bob {
+      flex-direction: column;
+      gap: 8px;
+    } */
+  
+    .logo-img {
+      height: 25px;
+      width: 25px;
+      font-size: 8px;
+    }
+  
+    .logo-img-name h1 {
+      font-size: 16px;
+    }
+  
+    .logo-img-name span {
+      font-size: 10px;
+    }
+  
+    .token-detail-volume p {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .top-buttons .left, .top-buttons .right {
+      height: 40px;
+    }
+  
+    .top-buttons .left button, .top-buttons .right button {
+      font-size: 12px;
+    }
+  
+    .pool-detail-page-stats h1 {
+      font-size: 20px;
+    }
+  
+    .pool-detail-page-stats p:nth-child(2) {
+      font-size: 12px;
+    }
+  
+    .link-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .link-row .left p:nth-child(1) {
+      height: 25px;
+      width: 25px;
+      font-size: 12px;
+    }
+    .link-row .right p:nth-child(1) {
+      font-size: 12px;
+    }
+    .toggle-button {
+      top: 5px;
+      right: 25px;
+    }
+    .explorebarchart{
+      margin-top: 70px;
+    }
+    .recharts-surface {
+      margin-top: 0px;
+  }
+    
+  }
